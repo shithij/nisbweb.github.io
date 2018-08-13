@@ -1,0 +1,58 @@
+html, body, div, img, p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.aboutDiv {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin-bottom: 2rem;
+}
+
+#aboutNISB  {
+    margin-top: 2rem;
+}
+
+#aboutNISBImg {
+    height: 5.25rem;
+    width: 5.75rem;
+}
+
+ #aboutIEEEImg {
+    height: 5.25rem;
+    width: 9rem;
+ }
+
+ #aboutR10Img {
+     width: 80vw;
+ }
+
+.aboutTitle {
+    margin-top: 1rem;
+    font-size: 1.25rem;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+ #aboutBlrImg {
+    height: 10rem;
+    width: 16rem;
+ }
+#aboutNISBCont, #aboutBlrCont , #aboutIEEECont, #aboutR10Cont {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    font-family: 'Alegreya Sans', sans-serif;
+    width: 100%;
+    text-align: justify;
+    text-justify: inter-ideograph;
+}

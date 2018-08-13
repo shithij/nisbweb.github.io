@@ -1,0 +1,52 @@
+html, body, div, img, p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.aboutDiv {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;
+    margin-bottom: 4rem;
+}
+
+#aboutNISB  {
+    margin-top: 2rem;
+}
+
+#aboutNISBImg {
+    height: 5.25rem;
+    width: 5.75rem;
+}
+
+ #aboutIEEEImg {
+    height: 5.25rem;
+    width: 9rem;
+ }
+ #aboutBlrImg {
+    height: 12rem;
+    width: 20rem;
+ }
+.aboutTitle {
+    margin-top: 1rem;
+    font-size: 1.75rem;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+#aboutNISBCont, #aboutIEEECont, #aboutR10Cont, #aboutBlrCont {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    font-family: 'Hind Siliguri', sans-serif;
+    width: 75%;
+    text-align: justify;
+}
