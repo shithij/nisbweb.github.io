@@ -30,7 +30,7 @@ db.ref("events").orderByChild("timeStamp").on("value", function(snapshot) {
                         <p class="eventVenue">Venue: <b>` +this.data[k]["venue"]  +  `</b></p>
                         <p class="eventTime">Date: <b>` + this.data[k]["date"] + `</b> &nbsp&nbsp Time: <b> ` + this.data[k]["time"] +  `</b></p>
                     </div>
-                    <button class="regBtn"><a target="_blank" href="` + this.data[k]["regUrl"] + `">Register</a></button>
+                    <button class="regBtn"><a target="_blank" href="` + this.data[k]["regUrl"] + `">` + this.data[k]["btnValue"] + `</a></button>
                 </div>
                     `;
                 todayEvents = event + todayEvents;
@@ -44,7 +44,7 @@ db.ref("events").orderByChild("timeStamp").on("value", function(snapshot) {
                         <p class="eventVenue">Venue: <b>` +this.data[k]["venue"]  +  `</b></p>
                         <p class="eventTime">Date: <b>` + this.data[k]["date"] + `</b> &nbsp&nbsp Time: <b> ` + this.data[k]["time"] +  `</b></p>
                     </div>
-                    <button class="regBtn"><a target="_blank" href="` + this.data[k]["regUrl"] + `">Register</a></button>
+                    <button class="regBtn"><a target="_blank" href="` + this.data[k]["regUrl"] + `">` + this.data[k]["btnValue"] + `</a></button>
                 </div>
                     `;
                 upEvents = event + upEvents;
