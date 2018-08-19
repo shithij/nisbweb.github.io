@@ -50,7 +50,7 @@ db.ref("events").orderByChild("timeStamp").on("value", function(snapshot) {
                 upEvents = event + upEvents;
             } else if ((todayDate - eventDate) > 0) {
                             var event = `
-                <div class="eventCard">
+                <div class="eventCard" style="height: 21rem;">
                     <div class="eventImg" style="background-image: url(` +  this.data[k]["imgUrl"]+ `)"></div>
                     <div class="eventDesp">
                         <p class="eventTitle">`  + this.data[k]["name"] + ` </p>
@@ -58,7 +58,6 @@ db.ref("events").orderByChild("timeStamp").on("value", function(snapshot) {
                         <p class="eventVenue">Venue: <b>` +this.data[k]["venue"]  +  `</b></p>
                         <p class="eventTime">Date: <b>` + this.data[k]["date"] + `</b> &nbsp&nbsp Time: <b> ` + this.data[k]["time"] +  `</b></p>
                     </div>
-                    <button class="regBtn">Registration Closed</button>
                 </div>
                     `;
                 pastEvents = event + pastEvents;
