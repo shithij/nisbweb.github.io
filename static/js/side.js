@@ -1,7 +1,7 @@
 function showSideBar() {
     if (document.querySelector(".navBarMob").style.display === "none") {
         document.querySelector(".navBarMob").style.display = "flex";
-        var path = location.pathname.slice(6, );
+        var path = location.pathname;
         console.log(path);
         switch (path) {
             case "/index.html" :{
