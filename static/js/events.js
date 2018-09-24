@@ -33,7 +33,7 @@ db.ref("events").orderByChild("timeStamp").on("value", function(snapshot) {
                     <button class="regBtn"><a target="_blank" href="` + this.data[k]["regUrl"] + `">` + this.data[k]["btnValue"] + `</a></button>
                 </div>
                     `;
-                todayEvents = event + todayEvents;
+                todayEvents += event;
             } else if ((todayDate - eventDate) < 0) {
                 var event = `
                 <div class="eventCard">
@@ -47,7 +47,7 @@ db.ref("events").orderByChild("timeStamp").on("value", function(snapshot) {
                     <button class="regBtn"><a target="_blank" href="` + this.data[k]["regUrl"] + `">` + this.data[k]["btnValue"] + `</a></button>
                 </div>
                     `;
-                upEvents = event + upEvents;
+                upEvents += event;
             } else if ((todayDate - eventDate) > 0) {
                             var event = `
                 <div class="eventCard" style="height: 21rem;">
@@ -60,7 +60,7 @@ db.ref("events").orderByChild("timeStamp").on("value", function(snapshot) {
                     </div>
                 </div>
                     `;
-                pastEvents = event + pastEvents;
+                pastEvents += event + pastEvents;
             }
         }
     });
