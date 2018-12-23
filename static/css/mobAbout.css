@@ -63,7 +63,7 @@ body {
     flex-flow: row wrap;
     justify-content: flex-start;
     align-items: center;
-    margin-left: 0.5rem;
+    /* margin-left: 0.5rem; */
 }
 
 .teamCard {
