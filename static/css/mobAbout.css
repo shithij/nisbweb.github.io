@@ -56,3 +56,42 @@ body {
     text-align: justify;
     text-justify: inter-ideograph;
 }
+
+#teamCont {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 0.5rem;
+}
+
+.teamCard {
+    /* height: 15.5rem; */
+    width: 45%;
+    border: 1px solid darkgrey;
+    border-radius: 4px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0.5rem;
+}
+.teamPic {
+    margin-top:-0.2rem;
+    width: 100%;
+    border-radius: 4px;
+    
+}
+
+.memName {
+    margin-top: 0.4rem;
+    font-family: 'Bree Serif', cursive;
+    font-size: 0.95rem;
+}
+
+.memPost {
+    font-family: 'Cabin', cursive;
+    margin-bottom: 0.2rem;
+    font-size: 0.9rem;
+}

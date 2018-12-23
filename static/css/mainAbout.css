@@ -38,9 +38,10 @@ body {
     width: 20rem;
  }
 .aboutTitle {
-    margin-top: 1rem;
-    font-size: 1.75rem;
+    margin-top: 1.25rem;
+    font-size: 1.6rem;
     font-family: 'Fira Sans', sans-serif;
+    margin-bottom: 0.5rem;
 }
 
 #aboutNISBCont, #aboutIEEECont, #aboutR10Cont, #aboutBlrCont {
@@ -49,4 +50,43 @@ body {
     font-family: 'Hind Siliguri', sans-serif;
     width: 75%;
     text-align: justify;
+}
+
+
+#teamCont {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 9.2rem;
+}
+
+.teamCard {
+    height: 15.5rem;
+    width: 12rem;
+    border: 1px solid darkgrey;
+    border-radius: 4px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0.5rem;
+}
+.teamPic {
+    margin-top:-0.2rem;
+    width: 100%;
+    border-radius: 4px;
+    
+}
+
+.memName {
+    margin-top: 0.4rem;
+    font-family: 'Bree Serif', cursive;
+    font-size: 1.05rem;
+}
+
+.memPost {
+    font-family: 'Cabin', cursive;
+    margin-bottom: 0.2rem;
 }
